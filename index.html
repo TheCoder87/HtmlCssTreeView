@@ -1,99 +1,168 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Demo of CSS Tree View</title>
+	<meta charset="UTF-8">
+	<title>Tutorials Link</title>
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
 <div class="css-treeview">
 	<ul>
-		<li><input type="checkbox" id="item-0" /><label for="item-0">This Folder is Closed By Default</label>
+		<li><input type="checkbox" id="item-0" /><label for="item-0">Technology</label>
 			<ul>
-				<li><input type="checkbox" id="item-0-0" /><label for="item-0-0">Ooops! A Nested Folder</label>
+				<li><input type="checkbox" id="item-0-0" /><label for="item-0-0">Software Architecture</label>
 					<ul>
-						<li><input type="checkbox" id="item-0-0-0" /><label for="item-0-0-0">Look Ma - No Hands!</label>
+						<li><input type="checkbox" id="item-0-0-0" /><label for="item-0-0-0">OOAD</label>
 							<ul>
-								<li><a href="#">First Nested Item</a></li>
-								<li><a href="#">Second Nested Item</a></li>
-								<li><a href="#">Third Nested Item</a></li>
-								<li><a href="#">Fourth Nested Item</a></li>
+								<li><a href="https://www.youtube.com/watch?v=TMuno5RZNeE&t=179s">Bob Martin SOLID Principles of Object Oriented and Agile Design - YouTube</a></li>
+								<li><a href="https://sourcemaking.com/design_patterns">Design Patterns</a></li>
+								<li><a href="https://www.tutorialspoint.com/design_pattern/index.htm">Design Patterns in Java Tutorial</a></li>
+								<li><a href="https://medium.com/@stephanhoekstra/clean-architecture-in-net-8eed6c224c50">Clean Architecture in .Net – Stephan Hoekstra – Medium</a></li>
+								<li><a href="https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html">The Clean Architecture | 8th Light</a></li>								
+								<li><a href="https://www.microsoft.com/net/tutorials/csharp/getting-started/patterns-antipatterns">.NET and C# In-Browser Tutorial | Common Patterns and Antipatterns</a></li>
+								<li><a href="http://csharpindepth.com/Articles/General/Singleton.aspx">C# in Depth: Implementing the Singleton Pattern</a></li>
+								<li><a href="https://dotnetcodr.com/architecture-and-patterns/">Architecture and patterns | Exercises in .NET with Andras Nemes</a></li>
+								<li><a href="https://assist-software.net/blog/dependency-injection-aspnet-mvc-tutorial">Dependency Injection in ASP.NET MVC Tutorial | ASSIST Software Romania</a></li>
+								<li><a href="https://www.codeproject.com/Articles/822791/Developing-MVC-applications-using-SOLID-principles">Developing MVC applications using SOLID principles - CodeProject</a></li>
+								<li><a href="http://www.codecompiled.com/mvc-interview-questions-and-answers-for-experienced/">MVC Interview Questions and Answers for Experienced</a></li>
+								<li><a href="http://www.tutorialsteacher.com/ioc">IoC Tutorial</a></li>
+								<li><a href="http://www.oodesign.com/design-principles.html">Design Principles | Object Oriented Design</a></li>
+								<li><a href="https://www.tutorialspoint.com/software_architecture_design/key_principles.htm">Software Architecture and Design Key Principles</a></li>
+								<li><a href="http://www.dofactory.com/net/design-patterns">.NET Design Patterns in C# and VB.NET - Gang of Four (GOF) - doFactory.com</a></li>
+								<li><a href="http://www.c-sharpcorner.com/UploadFile/SukeshMarla/design-patterns-introduction/">Design Patterns: Introduction</a></li>
+								<li><a href="https://www.codeproject.com/Articles/774259/Adapter-Design-Pattern-Csharp">Adapter Design Pattern (C#) - CodeProject</a></li>
+								<li><a href="http://www.dotnettricks.com/learn/designpatterns/gang-of-four-gof-design-patterns-in-net">Gang of Four (GOF) Design Patterns in .Net</a></li>
+								<li><a href="https://www.developerhandbook.com/">DeveloperHandbook.com • Cleaner code, better code</a></li>
 							</ul>
 						</li>
-						<li><A HREF="http://www.oodesign.com/design-principles.html" ADD_DATE="1478089174" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAACJUlEQVQ4jXVSPW8TURCc3ffuzt927DjhlAQqJOCHUCJqOsSfo6BARKKgQEhUEURJAxISIokNsRLr7Njx+e6e3+1S2AIatlhpVjM7xQy9fH+E/4wCogToBqoCsCJCmwMBAOk/bAXRhqsAkapaBggQYLNAa/jnLQEEgEBESrDKZJialdBaQ0QQ5M4tixWgtagShgEIBPW+THPnBZYJ9+P+vbg3nSSqWq83gkr09ceQrHl0sH87m3rviWmr27sYJd8ur21kTbsWDAdno+miKIo7O9udqGpcFu/Go1+Dq8l0mbsgiuLFvN3uRdZYa+04uR5fj8Pevtds7tln07zI03R5dnYexQd56aJadXj5s+9Lay0z82w2y7J85aQofFmWt/O5cy5N08Ui9St1RblykmX5bDZjZgtQkkwia+KdZrNutjutk+9fSiITBSuX7fdbzWrUqFfOx5okk9betlWi+TJ/9+b13Xsfa9WaiJwcnz57/iIt5PDw7afj41arlWXZ4GLw+MnTJhG9+nAUt6LFzcR7z0ReVmFUbXf7pWp6My2KzIAUsNY2Ot3RvLBQfD46vboaqsg6NxXxfgWoNQExgwiqxLy7e7D34KEVUNDZ8pPEuZyJAahRmAqUPEQhhlggYVAJOlsCsgzt9nqNZnPjsCmSgiAAVAwMAGIOw4ChVgAObDUKGfxXoKqAAgRhYoAUKiICWCYmWnd47bCR0bqxIJACSmDDRlV/A3VLK4PN0jtmAAAAAElFTkSuQmCC">Design Principles | Object Oriented Design</A></li>
-						<li><a href="#">Item 2</a></li>
-						<li><a href="#">Item 3</a></li>
-					</ul>
-				</li>
-				<li><input type="checkbox" id="item-0-1" /><label for="item-0-1">Yet Another One</label>
-					<ul>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-					</ul>
-				</li>
-				<li><input type="checkbox" id="item-0-2" disabled="disabled" /><label for="item-0-2">Disabled Nested Items</label>
-					<ul>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-						<li><a href="#">item</a></li>
-					</ul>
-				</li>
-				<li><a href="#">item</a></li>
-				<li><a href="#">item</a></li>
-				<li><a href="#">item</a></li>
-				<li><a href="#">item</a></li>
-			</ul>
-		</li>
-		<li><input type="checkbox" id="item-1" checked="checked" /><label for="item-1">This One is Open by Default...</label>
-			<ul>
-				<li><input type="checkbox" id="item-1-0" /><label for="item-1-0">And Contains More Nested Items...</label>
-					<ul>
-						<li><a href="#">Look Ma - No Hands</a></li>
-						<li><a href="#">Another Item</a></li>
-						<li><a href="#">And Yet Another</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Lorem</a></li>
-				<li><a href="#">Ipsum</a></li>
-				<li><a href="#">Dolor</a></li>
-				<li><a href="#">Sit Amet</a></li>
-			</ul>
-		</li>
-		<li><input type="checkbox" id="item-2" /><label for="item-2">Can You Believe...</label>
-			<ul>
-				<li><input type="checkbox" id="item-2-0" /><label for="item-2-0">That This Treeview...</label>
-					<ul>
-						<li><input type="checkbox" id="item-2-2-0" /><label for="item-2-2-0">Does Not Use Any JavaScript...</label>
+						<li><input type="checkbox" id="item-0-0-1" /><label for="item-0-0-1">Math for Programmers</label>
 							<ul>
-								<li><a href="#">But Relies Only</a></li>
-								<li><a href="#">On the Power</a></li>
-								<li><a href="#">Of CSS3</a></li>
+								<li><a href="http://steve-yegge.blogspot.hk/2006/03/math-for-programmers.html">Stevey&#39;s Blog Rants: Math For Programmers</a></li>
+								<li><a href="https://trans4mind.com/personal_development/mathematics/">Ken Ward&#39;s Mathematics Pages - Contents</a></li>
+								<li><a href="https://www.youtube.com/watch?v=FEnwM-iDb2g">Algorithms lecture 2 -- Time complexity Analysis of iterative programs - YouTube</a></li>
+								<li><a href="https://betterexplained.com/articles/easy-permutations-and-combinations/">Easy Permutations and Combinations – BetterExplained</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 2</a></li>
-						<li><a href="#">Item 3</a></li>
+						<li><input type="checkbox" id="item-0-0-2" /><label for="item-0-0-2">Functional Programming</label>
+							<ul>
+								<li><a href="https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53">Goodbye, Object Oriented Programming – Charles Scalfani – Medium</a></li>
+								<li><a href="http://fsharp.org/">F# Software Foundation</a></li>
+								<li><a href="https://www.python.org/">Welcome to Python.org</a></li>
+								<li><a href="https://medium.com/@naveenrtr/introduction-to-functional-programming-with-c-b167f15221e1">Introduction to functional programming with C# – Naveen Kumar – Medium</a></li>
+								<li><a href="http://blog.ploeh.dk/">ploeh blog</a></li>
+							</ul>
+						</li>
 					</ul>
 				</li>
-				<li><input type="checkbox" id="item-2-1" /><label for="item-2-1">This is a Folder With...</label>
+				<li><input type="checkbox" id="item-0-1" /><label for="item-0-1">Open Source Software Technologies</label>
 					<ul>
-						<li><a href="#">Some Nested Items...</a></li>
-						<li><a href="#">Some Nested Items...</a></li>
-						<li><a href="#">Some Nested Items...</a></li>
-						<li><a href="#">Some Nested Items...</a></li>
-						<li><a href="#">Some Nested Items...</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
 					</ul>
 				</li>
-				<li><input type="checkbox" id="item-2-2" disabled="disabled" /><label for="item-2-2">Disabled Nested Items</label>
+				<li><input type="checkbox" id="item-0-2" /><label for="item-0-2">Microsoft Technologies</label>
+					<ul>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-0-3" /><label for="item-0-3">OSDev</label>
+					<ul>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-0-4" /><label for="item-0-4">Networking</label>
+					<ul>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-0-5" /><label for="item-0-5">Software Companies & Startups</label>
+					<ul>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-0-6" /><label for="item-0-6">Basic Electronics</label>
+					<ul>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-0-7" /><label for="item-0-7">Online Tutorials Site</label>
+					<ul>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-0-8" /><label for="item-0-8">Computer Science</label>
+					<ul>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-0-9" /><label for="item-0-9">Computer Science</label>
+					<ul>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+						<li><a href="#">item</a></li>
+					</ul>
+				</li>
+				<li><input type="checkbox" id="item-0-10" /><label for="item-0-10">Art of Living for Programmer</label>
 					<ul>
 						<li><a href="#">item</a></li>
 						<li><a href="#">item</a></li>
